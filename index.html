@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Rapidex
+  </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+  </script>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="header.css" rel="stylesheet"/>
+  <link href="styles.css" rel="stylesheet"/>
+  <link href="menu.css" rel="stylesheet"/>
+  <meta content="#e7c789" name="theme-color"/>
+ </head>
+ <body>
+  <header>
+   <nav id="navbar">
+    <i class="fa-solid fa-bolt" id="nav_logo">
+     Rapidex
+    </i>
+    <div id="nav-actions">
+     <button class="dark-toggle" id="toggle-dark">
+      🌙 Modo Escuro
+     </button>
+     <button class="btn-default" id="login-btn">
+      Login
+     </button>
+    </div>
+    <ul id="nav_list">
+     <li class="nav-item">
+      <a class="active" href="#home">
+       Início
+      </a>
+     </li>
+     <li class="nav-item">
+      <a href="#menu">
+       Cardápio
+      </a>
+     </li>
+     <li class="nav-item">
+      <a href="#testimonials">
+       Avaliações
+      </a>
+     </li>
+     <li class="nav-item">
+      <a href="#favoritos">
+       Favoritos
+      </a>
+     </li>
+    </ul>
+    <button id="mobile_btn">
+     <i class="fa-solid fa-bars">
+     </i>
+    </button>
+   </nav>
+   <div id="mobile_menu">
+    <ul id="mobile_nav_list">
+     <li class="nav-item">
+      <a class="active" href="#home">
+       Início
+      </a>
+     </li>
+     <li class="nav-item">
+      <a href="#menu">
+       Cardápio
+      </a>
+     </li>
+     <li class="nav-item">
+      <a href="#testimonials">
+       Avaliações
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main id="content">
+   <section class="section" id="home">
+    <div id="cta">
+     <h1 class="tittle">
+      Escolha a proteína,
+      <span>
+       o resto é com a gente!
+      </span>
+     </h1>
+     <div id="cta_buttons">
+      <a class="btn-default" href="#menu">
+       Ver cardápio
+      </a>
+     </div>
+     <div class="social-media-buttons">
+      <a href="#">
+       <i class="fa-brands fa-instagram">
+       </i>
+      </a>
+      <a href="#">
+       <i class="fa-brands fa-facebook">
+       </i>
+      </a>
+     </div>
+    </div>
+   </section>
+   <section class="section" id="menu" style="display: none;">
+    
+    <h2 class="section-title">
+     Cardápio
+    </h2>
+    <h3 class="section-subtitle">
+     Opções de Pratos
+    </h3>
+   <div id="filtros">
+    <button class="filtro-btn active" data-filtro="todos">Todos</button>
+    <button class="filtro-btn" data-filtro="frango">Frango</button>
+    <button class="filtro-btn" data-filtro="carne">Carne</button>
+    <button class="filtro-btn" data-filtro="peixe">Peixe</button>
+    <button class="filtro-btn" data-filtro="ovo">Ovo</button>
+   </div>
+
+    <div id="dishes">
+     <div class="dish" data-proteina="frango">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Strogonoff de Frango" class="dish-image" src="dish1.png"/>
+      <h3 class="dish-title">
+       Strogonoff
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        <p>
+         Strogonoff de frango com ingredientes simples e saborosos.
+        </p>
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          500g de peito de frango cortado em cubos (ou carne/cogumelos)
+         </li>
+         <li>
+          1 cebola média picada
+         </li>
+         <li>
+          2 dentes de alho picados
+         </li>
+         <li>
+          1 colher (sopa) de óleo ou manteiga
+         </li>
+         <li>
+          2 colheres (sopa) de ketchup
+         </li>
+         <li>
+          1 colher (sopa) de mostarda
+         </li>
+         <li>
+          1 caixa de creme de leite (200g)
+         </li>
+         <li>
+          1/2 xícara de molho de tomate ou 1 tomate picado (opcional)
+         </li>
+         <li>
+          Sal e pimenta a gosto
+         </li>
+         <li>
+          Champignon fatiado (opcional)
+         </li>
+         <li>
+          Páprica ou noz-moscada (opcional)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Modo de Preparo:
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Em uma panela, aqueça o óleo ou manteiga e refogue a cebola até murchar.
+         </li>
+         <li>
+          Adicione o alho e refogue mais um pouco.
+         </li>
+         <li>
+          Coloque os cubos de frango e doure bem.
+         </li>
+         <li>
+          Tempere com sal, pimenta, ketchup e mostarda.
+         </li>
+         <li>
+          Se quiser, adicione o molho de tomate ou o tomate picado e cozinhe por 5 minutos.
+         </li>
+         <li>
+          Abaixe o fogo e misture o creme de leite.
+         </li>
+         <li>
+          Finalize com champignon ou temperos extras, se desejar.
+         </li>
+        </ol>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="frango">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Fricassê de Frango" class="dish-image" src="fricasse.png"/>
+      <h3 class="dish-title">
+       Fricassê de Frango
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        <p>
+         Frango desfiado cremoso com milho, requeijão e batata palha crocante.
+        </p>
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          500g de peito de frango cozido e desfiado
+         </li>
+         <li>
+          1 lata de milho verde
+         </li>
+         <li>
+          1 copo de requeijão cremoso
+         </li>
+         <li>
+          1 caixinha de creme de leite
+         </li>
+         <li>
+          100g de queijo mussarela
+         </li>
+         <li>
+          Sal e temperos a gosto
+         </li>
+         <li>
+          Batata palha para cobrir
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Modo de Preparo:
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Bata no liquidificador o milho, o requeijão e o creme de leite.
+         </li>
+         <li>
+          Misture com o frango desfiado e tempere.
+         </li>
+         <li>
+          Leve ao forno com queijo por cima e finalize com batata palha.
+         </li>
+        </ol>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="frango">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Frango Xadrez" class="dish-image" src="Frango-Xadrez2.png"/>
+      <h3 class="dish-title">
+       Frango Xadrez
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        <p>
+         Cubos de frango com pimentões, cebola e molho oriental agridoce.
+        </p>
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          500g de peito de frango em cubos
+         </li>
+         <li>
+          1 cebola grande em cubos
+         </li>
+         <li>
+          1 pimentão vermelho e 1 verde em cubos
+         </li>
+         <li>
+          2 colheres de sopa de molho shoyu
+         </li>
+         <li>
+          1 colher de chá de amido de milho
+         </li>
+         <li>
+          Óleo, sal, alho e gengibre a gosto
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Modo de Preparo:
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Doure o frango com alho e gengibre.
+         </li>
+         <li>
+          Refogue os legumes rapidamente.
+         </li>
+         <li>
+          Adicione o shoyu e o amido para engrossar.
+         </li>
+        </ol>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="frango">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Frango à Parmegiana" class="dish-image" src="frangop.png"/>
+      <h3 class="dish-title">
+       Frango à Parmegiana
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        <p>
+         Filé de frango empanado com molho de tomate e queijo gratinado.
+        </p>
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          4 filés de peito de frango
+         </li>
+         <li>
+          Sal, pimenta e alho para temperar
+         </li>
+         <li>
+          Farinha de trigo, ovos e farinha de rosca
+         </li>
+         <li>
+          Molho de tomate e queijo mussarela
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Modo de Preparo:
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Tempere, empane e frite os filés.
+         </li>
+         <li>
+          Cubra com molho e queijo e leve ao forno para gratinar.
+         </li>
+        </ol>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="carne">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Macarrão com carne moída" class="dish-image" src="dish2.png"/>
+      <h3 class="dish-title">
+       Macarrão com Carne Moída
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        Receita prática e deliciosa de macarrão com carne moída.
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          250g de macarrão (penne, parafuso ou espaguete)
+         </li>
+         <li>
+          300g de carne moída
+         </li>
+         <li>
+          1 cebola média picada
+         </li>
+         <li>
+          2 dentes de alho picados
+         </li>
+         <li>
+          2 colheres (sopa) de óleo ou azeite
+         </li>
+         <li>
+          1 caixa de molho de tomate (ou 3 tomates maduros picados)
+         </li>
+         <li>
+          Sal, pimenta e cheiro-verde a gosto
+         </li>
+        </ul>
+        <strong>
+         Modo de preparo:
+        </strong>
+        <br/>
+        Cozinhe o macarrão conforme as instruções da embalagem e reserve.
+        <br/>
+        Em outra panela, aqueça o óleo e refogue a cebola e o alho até dourarem.
+        <br/>
+        Adicione a carne moída e cozinhe até perder a cor crua.
+        <br/>
+        Tempere com sal e pimenta a gosto.
+        <br/>
+        Acrescente o molho de tomate e deixe cozinhar por 5 a 10 minutos.
+        <br/>
+        Misture o molho ao macarrão já cozido e finalize com cheiro-verde se desejar.
+        <br/>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="peixe">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Moqueca de peixe" class="dish-image" src="dish3.png"/>
+      <h3 class="dish-title">
+       Moqueca de Peixe
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        Uma moqueca simples, tropical e cheia de sabor!
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          500g de filé de peixe (cação, tilápia ou outro de sua preferência)
+         </li>
+         <li>
+          1 pimentão vermelho em rodelas
+         </li>
+         <li>
+          1 pimentão verde em rodelas
+         </li>
+         <li>
+          2 tomates maduros picados
+         </li>
+         <li>
+          1 cebola grande em rodelas
+         </li>
+         <li>
+          2 dentes de alho picados
+         </li>
+         <li>
+          200ml de leite de coco
+         </li>
+         <li>
+          2 colheres (sopa) de azeite de dendê (ou azeite comum, se preferir)
+         </li>
+         <li>
+          Coentro ou cheiro-verde a gosto
+         </li>
+         <li>
+          Sal e pimenta a gosto
+         </li>
+        </ul>
+        <strong>
+         Modo de preparo:
+        </strong>
+        <br/>
+        Tempere o peixe com sal, pimenta e alho. Deixe descansar por 20 minutos.
+        <br/>
+        Em uma panela, faça camadas com cebola, tomate, pimentão e os pedaços de peixe.
+        <br/>
+        Regue com o leite de coco e o azeite de dendê.
+        <br/>
+        Cozinhe em fogo médio com a panela tampada por cerca de 20 minutos, sem mexer muito.
+        <br/>
+        Finalize com coentro ou cheiro-verde e sirva com arroz branco.
+        <br/>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="carne">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Bife de carne acebolado" class="dish-image" src="dish4.png"/>
+      <h3 class="dish-title">
+       Bife de Carne
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        Receita clássica, rápida e cheia de sabor!
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          4 bifes de carne (alcatra, contrafilé ou patinho)
+         </li>
+         <li>
+          2 cebolas grandes cortadas em rodelas
+         </li>
+         <li>
+          2 dentes de alho picados
+         </li>
+         <li>
+          2 colheres (sopa) de óleo
+         </li>
+         <li>
+          Sal e pimenta-do-reino a gosto
+         </li>
+        </ul>
+        <strong>
+         Modo de preparo:
+        </strong>
+        <br/>
+        Tempere os bifes com sal, pimenta e alho.
+        <br/>
+        Aqueça uma frigideira com o óleo e doure os bifes por 2 a 3 minutos de cada lado, ou até o ponto desejado.
+        <br/>
+        Retire os bifes e reserve.
+        <br/>
+        Na mesma frigideira, adicione as rodelas de cebola e refogue até ficarem douradas e macias.
+        <br/>
+        Volte os bifes para a frigideira apenas para misturar com a cebola e aquecer.
+        <br/>
+        Sirva com arroz, salada ou batatas.
+        <br/>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="ovo">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Ensopado de Ovos" class="dish-image" src="ovo.png"/>
+      <h3 class="dish-title">
+       Moqueca de Ovos
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        Moqueca de ovos com ovos cozidos, pimentão e molho cremoso.
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          2 colheres (sopa) de óleo
+         </li>
+         <li>
+          1 cebola pequena cortada em pétalas (100 g)
+         </li>
+         <li>
+          2 tomates médios picados (280 g)
+         </li>
+         <li>
+          1 xícara (chá) de água (200 ml)
+         </li>
+         <li>
+          1 xícara (chá) de polpa de tomate (200 g)
+         </li>
+         <li>
+          2 sachês de Tempero SAZÓN® Sabores do Nordeste
+         </li>
+         <li>
+          2 pitadas de sal
+         </li>
+         <li>
+          1 pimentão verde médio, em rodelas (150 g)
+         </li>
+         <li>
+          7 ovos cozidos
+         </li>
+         <li>
+          Meia xícara (chá) de leite de coco (100 ml)
+         </li>
+         <li>
+          Meia colher (chá) de suco de limão
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Modo de preparo:
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Em uma panela grande, coloque o óleo e leve ao fogo médio para aquecer. Junte a cebola e refogue por 2 minutos ou até ficar transparente.
+         </li>
+         <li>
+          Adicione o tomate, a água, a polpa de tomate, o Tempero SAZÓN® e o sal, e misture.
+         </li>
+         <li>
+          Sobre a mistura de tomate e polpa, intercale camadas com o pimentão verde, 4 dos ovos cozidos em rodelas, o leite de coco e o suco de limão.
+         </li>
+         <li>
+          Cozinhe por 12 minutos, com a panela semitampada ou até obter um ensopado com caldo levemente encorpado.
+         </li>
+         <li>
+          Adicione o restante dos ovos ainda inteiros, cozinhe por mais 2 minutos ou até aquecer bem.
+         </li>
+         <li>
+          Retire do fogo e sirva em seguida.
+         </li>
+        </ol>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="peixe">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Filé de Linguado na Manteiga" class="dish-image" src="filepeixe.png"/>
+      <h3 class="dish-title">
+       Filé de Peixe
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        Filés de peixe com um toque cítrico irresistível.
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          800 g de filés de linguado cortados ao meio
+         </li>
+         <li>
+          2 sachês de Tempero SAZÓN® Nordeste
+         </li>
+         <li>
+          2 colheres (sopa) de suco de limão
+         </li>
+         <li>
+          2 colheres (chá) de sal
+         </li>
+         <li>
+          1/2 xícara (chá) de manteiga sem sal
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Modo de Preparo:
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Tempere os filés com o Tempero SAZÓN®, o suco de limão e o sal.
+         </li>
+         <li>
+          Deixe descansar por 10 minutos para absorver os sabores.
+         </li>
+         <li>
+          Em uma frigideira média, derreta metade da manteiga em fogo baixo.
+         </li>
+         <li>
+          Frite os filés aos poucos por 2 minutos de cada lado, até dourarem, repondo a manteiga conforme necessário.
+         </li>
+         <li>
+          Retire do fogo e sirva em seguida.
+         </li>
+        </ol>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="ovo">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Omelete com Presunto e Queijo" class="dish-image" src="omelete.png"/>
+      <h3 class="dish-title">
+       Omelete com Presunto e Queijo
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        Um omelete simples, rápido e cheio de sabor com presunto, queijo e temperos!
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          2 ovos
+         </li>
+         <li>
+          1 pitada de sal
+         </li>
+         <li>
+          1 fatia de presunto picado
+         </li>
+         <li>
+          2 fatias de queijo
+         </li>
+         <li>
+          Tempero verde (cheiro-verde) a gosto
+         </li>
+         <li>
+          Caldo de galinha a gosto (opcional)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Modo de Preparo:
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Bata bem os ovos (à mão ou na batedeira).
+         </li>
+         <li>
+          Unte uma frigideira com óleo, aqueça e despeje os ovos batidos.
+         </li>
+         <li>
+          Acrescente o sal, o presunto picado e as fatias de queijo por cima.
+         </li>
+         <li>
+          Adicione o cheiro-verde e o caldo de galinha, se desejar.
+         </li>
+         <li>
+          Deixe firmar e vire o omelete para dourar o outro lado.
+         </li>
+         <li>
+          Sirva quente e aproveite!
+         </li>
+        </ol>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="ovo">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Omelete de Tapioca com Frango" class="dish-image" src="omelete-tapioca.png"/>
+      <h3 class="dish-title">
+       Omelete de Tapioca com Frango
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        Omelete leve e funcional com tapioca, frango desfiado e requeijão cremoso.
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          1 ovo
+         </li>
+         <li>
+          2 colheres (sopa) de tapioca
+         </li>
+         <li>
+          2 colheres (sopa) de azeite (30 ml)
+         </li>
+         <li>
+          100g de frango desfiado (Na Receita Sadia ou similar)
+         </li>
+         <li>
+          6 tomates-cereja cortados ao meio
+         </li>
+         <li>
+          Sal a gosto
+         </li>
+         <li>
+          Pimenta-do-reino a gosto
+         </li>
+         <li>
+          2 colheres (sopa) de requeijão cremoso
+         </li>
+         <li>
+          Salsinha picada a gosto
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Modo de Preparo:
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Em uma tigela, bata o ovo e adicione a tapioca, tempere com sal e pimenta.
+         </li>
+         <li>
+          Aqueça uma frigideira antiaderente em fogo médio e adicione um fio de azeite para untar.
+         </li>
+         <li>
+          Despeje a mistura de ovo e tapioca e espalhe uniformemente. Quando a crepioca estiver firme e dourada na parte de baixo, vire e deixe dourar do outro lado. Reserve.
+         </li>
+         <li>
+          Em outra frigideira, aqueça um pouco de azeite, refogue o frango desfiado e os tomates, tempere com sal e pimenta.
+         </li>
+         <li>
+          Espalhe o requeijão cremoso sobre a crepioca e adicione o frango refogado com os tomates. Salpique salsinha picada por cima.
+         </li>
+         <li>
+          Dobre a crepioca ao meio, formando um envelope, e sirva.
+         </li>
+        </ol>
+       </div>
+      </span>
+     </div>
+     <div class="dish" data-proteina="ovo">
+      <div class="dish-heart">
+       <i class="fa-solid fa-heart">
+       </i>
+      </div>
+      <img alt="Ovo ao Forno com Molho de Tomate" class="dish-image" src="ovo-forno.png"/>
+      <h3 class="dish-title">
+       Ovos ao creme de leite
+      </h3>
+      <span class="dish-description">
+       <div class="recipe-preview">
+        Ovos ao creme de leite temperado.
+       </div>
+       <button class="ver-mais-btn">
+        Ver mais
+       </button>
+       <div class="extra-info" style="display: none;">
+        <p>
+         <strong>
+          Ingredientes:
+         </strong>
+        </p>
+        <ul>
+         <li>
+          2 colheres (sopa) de azeite
+         </li>
+         <li>
+          3 dentes de alho picado
+         </li>
+         <li>
+          4 tomates picados
+         </li>
+         <li>
+          Sal e pimenta-do-reino a gosto
+         </li>
+         <li>
+          1 colher (sopa) de salsa picada
+         </li>
+         <li>
+          4 ovos
+         </li>
+         <li>
+          2 colheres (sopa) de creme de leite por porção (opcional)
+         </li>
+        </ul>
+        <p>
+         <strong>
+          Modo de Preparo:
+         </strong>
+        </p>
+        <ol>
+         <li>
+          Em uma panela, aqueça o azeite e frite o alho e o tomate por 5 minutos.
+         </li>
+         <li>
+          Bata a mistura no liquidificador e volte à panela.
+         </li>
+         <li>
+          Tempere com sal e pimenta e reserve.
+         </li>
+         <li>
+          Misture o creme de leite com a salsa e um pouco de sal.
+         </li>
+         <li>
+          Separe 4 xícaras ou cumbucas pequenas que possam ir ao forno.
+         </li>
+         <li>
+          Em cada uma, coloque 2 colheres (sopa) do molho de tomate no fundo e 1 ovo cru por cima.
+         </li>
+         <li>
+          Cubra com 2 colheres (sopa) do creme de leite temperado.
+         </li>
+         <li>
+          Leve ao forno médio preaquecido por 10 minutos. Sirva em seguida.
+         </li>
+        </ol>
+       </div>
+      </span>
+     </div>
+    </div>
+   </section>
+
+<section class="section" id="favoritos" style="display: none;">
+     <h2 class="section-title">
+      Meus Favoritos
+     </h2>
+     <h3 class="section-subtitle">
+      Pratos que você adorou ❤️
+     </h3>
+     <div class="dishes-container" id="favorites-list">
+     </div>
+    </section>
+  </main>
+  
+  <section class="section" id="testimonials" style="display: none;">
+   <img alt="" id="testimonial_chef" src="pngwing.com.png"/>
+   <div id="testimonials_content">
+    <h2 class="section-title">
+     Depoimentos
+    </h2>
+    <h3 class="section-subtitle">
+     O que os clientes falam sobre nós
+    </h3>
+    <div id="feedbacks">
+     <div class="feedback">
+      <img alt="" class="feedback-avatar" src="formacao_sera-que-sou-uma-pessoa-que-tem-virtudes.jpg"/>
+      <div class="feedback-content">
+       <p>
+        Izadora
+        <span>
+         <i class="fa-solid fa-star">
+         </i>
+         <i class="fa-solid fa-star">
+         </i>
+         <i class="fa-solid fa-star">
+         </i>
+         <i class="fa-solid fa-star">
+         </i>
+         <i class="fa-solid fa-star">
+         </i>
+        </span>
+       </p>
+       <p>
+        "melhor de todos"
+       </p>
+      </div>
+     </div>
+     <div class="feedback">
+      <img alt="" class="feedback-avatar" src="premium_photo-1689530775582-83b8abdb5020.jpg"/>
+      <div class="feedback-content">
+       <p>
+        Tomas
+        <span>
+         <i class="fa-solid fa-star">
+         </i>
+         <i class="fa-solid fa-star">
+         </i>
+         <i class="fa-solid fa-star">
+         </i>
+         <i class="fa-solid fa-star">
+         </i>
+         <i class="fa-solid fa-star">
+         </i>
+        </span>
+       </p>
+       <p>
+        "Muito bom melhor do mundo"
+       </p>
+      </div>
+     </div>
+    </div>
+    <button class="btn-default">
+     Ver mais avaliações
+    </button>
+   </div>
+  </section>
+  
+  <div class="modal" id="login-modal">
+   <div class="modal-content">
+    <span class="close-modal" onclick="closeModal()">
+     ×
+    </span>
+    <h2>
+     Login / Cadastro
+    </h2>
+    <input id="auth-username" placeholder="Usuário" type="text"/>
+    <input id="auth-password" placeholder="Senha" type="password"/>
+    <div class="auth-buttons">
+     <button onclick="register()">
+      Cadastrar
+     </button>
+     <button onclick="login()">
+      Entrar
+     </button>
+    </div>
+    <p id="auth-message">
+    </p>
+   </div>
+  </div>
+
+  <script src="script.js">
+  </script>
+ </body>
+</html>
